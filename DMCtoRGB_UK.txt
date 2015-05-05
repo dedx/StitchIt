@@ -1,0 +1,455 @@
+#DMCNumber , Description , Red , Green , Blue , Hex
+000 , White , 255 , 255 , 255 , 0xFFFFFF
+208 , Lavender - VY DK , 148 , 91 , 128 , 0x945B80
+169 , Pewter Grey +++ , 130 , 125 , 125 , 0x827D7D
+168 , Silver Grey +++ , 177 , 174 , 183 , 0xB1AEB7
+167 , Khaki Brown +++ , 133 , 93 , 49 , 0x855D31
+166 , Lime Green +++ , 173 , 194 , 56 , 0xADC238
+165 , Green - BRIGHT +++ , 225 , 244 , 119 , 0xE1F477
+164 , Green - LT +++ , 186 , 228 , 182 , 0xBAE4B6
+163 , Green +++ , 85 , 122 , 96 , 0x557A60
+162 , Baby Blue - LT +++ , 202 , 231 , 240 , 0xCBDCFD
+161 , Petrol Blue - DK +++ , 96 , 86 , 139 , 0x60568B
+160 , Petrol Blue - MED +++ , 129 , 120 , 169 , 0x8178A9
+159 , Petrol Blue - LT +++ , 188 , 181 , 222 , 0xBCB5DE
+158 , Blue - DK +++ , 57 , 48 , 104 , 0x393068
+157 , Blue - LT +++ , 181 , 184 , 234 , 0xB5B8EA
+156 , Blue - MED +++ , 133 , 119 , 180 , 0x8577B4
+155 , Forget-Me-Not Blue +++ , 151 , 116 , 182 , 0x9774B6
+154 , Red - VY DK +++ , 75 , 35 , 58 , 0x4B233A
+153 , Lilac +++ , 234 , 197 , 235 , 0xEAC5EB
+152 , Flesh - DK +++ , 225 , 161 , 161 , 0xE1A1A1
+151 , Pink +++ , 255 , 203 , 215 , 0xFFCBD7
+150 , Bright Red +++ , 207 , 0 , 83 , 0xCF0053
+9998 , Ecru , 255 , 247 , 231 , 0xFFF7E7
+356 , Terracotta - MED , 226 , 114 , 91 , 0xE2725B
+355 , Terracotta - DK , 189 , 73 , 47 , 0xBD492F
+353 , Peach Flesh , 255 , 196 , 184 , 0xFFC4B8
+352 , Coral - LT , 255 , 157 , 144 , 0xFF9D90
+351 , Coral , 255 , 128 , 135 , 0xFF8087
+350 , Coral - MED , 237 , 69 , 90 , 0xED455A
+349 , Coral - DK , 220 , 61 , 91 , 0xDC3D5B
+347 , Salmon - VY DK , 194 , 36 , 67 , 0xC22443
+341 , Blue Violet - LT , 145 , 180 , 197 , 0x91B4C5
+340 , Blue Violet - MED , 162 , 121 , 164 , 0xA279A4
+336 , Navy Blue , 36 , 73 , 103 , 0x244967
+335 , Rose , 219 , 36 , 79 , 0xDB244F
+334 , Baby Blue - MED , 115 , 140 , 170 , 0x738CAA
+333 , Blue Violet - VY DK , 127 , 84 , 130 , 0x7F5482
+327 , Violet - DK , 61 , 0 , 103 , 0x3D0067
+326 , Rose - VY DEEP , 188 , 22 , 65 , 0xBC1641
+322 , Navy Blue - VY LT , 81 , 109 , 135 , 0x516D87
+321 , Christmas Red , 231 , 18 , 97 , 0xE71261
+320 , Pistachio Green - MED , 138 , 153 , 120 , 0x8A9978
+319 , Pistachio Green - VY DK , 85 , 95 , 82 , 0x555F52
+318 , Steel Grey - LT , 197 , 198 , 190 , 0xC5C6BE
+317 , Pewter Grey , 167 , 139 , 136 , 0xA78B88
+316 , Antique Mauve - MED , 220 , 141 , 141 , 0xDC8D8D
+315 , Antique Mauve - VY DK , 163 , 90 , 91 , 0xA35A5B
+312 , Navy Blue - LT , 58 , 84 , 103 , 0x3A5467
+311 , Navy Blue - MED , 0 , 79 , 97 , 0x004F61
+310 , Black , 0 , 0 , 0 , 0x000000
+309 , Rose - DEEP , 214 , 43 , 91 , 0xD62B5B
+307 , Lemon , 255 , 231 , 109 , 0xFFE76D
+304 , Christmas Red - MED , 188 , 0 , 97 , 0xBC0061
+301 , Mahogany - MED , 209 , 102 , 84 , 0xD16654
+300 , Mahogany - VY DK , 143 , 57 , 38 , 0x8F3926
+225 , Shell Pink - ULT VY LT , 255 , 240 , 228 , 0xFFF0E4
+224 , Shell Pink - VY LT , 255 , 199 , 176 , 0xFFC7B0
+223 , Shell Pink - LT , 219 , 128 , 115 , 0xDB8073
+221 , Shell Pink - VY DK , 156 , 41 , 74 , 0x9C294A
+211 , Lavender - LT , 243 , 218 , 228 , 0xF3DAE4
+210 , Lavender - MED , 236 , 207 , 225 , 0xECCFE1
+209 , Lavender - DK , 206 , 148 , 186 , 0xCE94BA
+520 , Fern Green - DK , 55 , 73 , 18 , 0x374912
+519 , Sky Blue , 194 , 209 , 207 , 0xC2D1CF
+518 , Wedgwood - LT , 102 , 148 , 154 , 0x66949A
+517 , Wedgwood - MED , 16 , 127 , 135 , 0x107F87
+505 , Grass Green - DK +++ , 58206 , 99221 , 64193 , 0x3A6340
+504 , Blue Green - LT *** , 206 , 221 , 193 , 0xCEDDC1
+503 , Blue Green - MED , 195 , 206 , 183 , 0xC3CEB7
+502 , Blue Green , 134 , 158 , 134 , 0x869E86
+501 , Blue Green - DK , 67 , 85 , 73 , 0x435549
+500 , Blue Green - VY DK , 43 , 57 , 41 , 0x2B3929
+498 , Christmas Red - LT , 187 , 0 , 97 , 0xBB0061
+472 , Avocado Green - ULT LT , 238 , 255 , 182 , 0xEEFFB6
+471 , Avocado Green - VY LT , 176 , 187 , 140 , 0xB0BB8C
+470 , Avocado Green - LT , 133 , 143 , 108 , 0x858F6C
+469 , Avocado Green , 116 , 114 , 92 , 0x74725C
+453 , Shell Grey - LT , 235 , 207 , 185 , 0xEBCFB9
+452 , Shell Grey - MED , 210 , 185 , 175 , 0xD2B9AF
+451 , Shell Grey - DK , 179 , 151 , 143 , 0xB3978F
+445 , Lemon - LT , 255 , 255 , 190 , 0xFFFFBE
+444 , Lemon - DK , 255 , 176 , 0 , 0xFFB000
+437 , Tan - LT , 238 , 171 , 121 , 0xEEAB79
+436 , Tan , 231 , 152 , 115 , 0xE79873
+435 , Brown - VY LT , 187 , 107 , 57 , 0xBB6B39
+434 , Brown - LT , 178 , 103 , 70 , 0xB26746
+433 , Brown - MED , 151 , 84 , 20 , 0x975414
+422 , Hazelnut Brown - LT , 237 , 172 , 123 , 0xEDAC7B
+420 , Hazelnut Brown - DK , 140 , 91 , 43 , 0x8C5B2B
+415 , Pearl Grey , 221 , 221 , 218 , 0xDDDDDA
+414 , Steel Grey - DK , 167 , 139 , 136 , 0xA78B88
+413 , Pewter Grey - DK , 109 , 95 , 95 , 0x6D5F5F
+407 , Sportsman Flesh - VY DK , 194 , 101 , 76 , 0xC2654C
+402 , Mahogany - VY LT , 255 , 190 , 164 , 0xFFBEA4
+400 , Mahogany - DK , 157 , 60 , 39 , 0x9D3C27
+372 , Mustard - LT , 203 , 162 , 107 , 0xCBA26B
+371 , Mustard , 196 , 155 , 100 , 0xC49B64
+370 , Mustard - MED , 184 , 138 , 87 , 0xB88A57
+369 , Pistachio Green - VY LT , 243 , 250 , 209 , 0xF3FAD1
+368 , Pistachio Green - LT , 181 , 206 , 162 , 0xB5CEA2
+367 , Pistachio Green - DK , 95 , 112 , 91 , 0x5F705B
+676 , Old Gold - LT , 255 , 206 , 158 , 0xFFCE9E
+666 , Christmas Red - LT , 213 , 39 , 86 , 0xD52756
+648 , Beaver Grey - LT , 202 , 202 , 202 , 0xCACACA
+647 , Beaver Grey - MED , 190 , 190 , 185 , 0xBEBEB9
+646 , Beaver Grey - DK , 121 , 121 , 121 , 0x797979
+645 , Beaver Grey - VY DK , 113 , 113 , 113 , 0x717171
+644 , Beige Grey - MED , 224 , 224 , 215 , 0xE0E0D7
+642 , Beige Grey - DK , 174 , 176 , 170 , 0xAEB0AA
+640 , Beige Grey - VY DK , 163 , 163 , 157 , 0xA3A39D
+632 , Dark Flesh - MED , 162 , 77 , 52 , 0xA24D34
+613 , Drab Brown - LT , 219 , 176 , 122 , 0xDBB07A
+612 , Drab Brown - MED , 203 , 152 , 103 , 0xCB9867
+611 , Drab Brown - DK , 158 , 109 , 91 , 0x9E6D5B
+610 , Drab Brown - VY DK , 151 , 104 , 84 , 0x976854
+608 , Bright Orange , 255 , 91 , 0 , 0xFF5B00
+606 , Bright Orange-Red , 255 , 0 , 0 , 0xFF0000
+605 , Cranberry - VY LT , 255 , 207 , 214 , 0xFFCFD6
+604 , Cranberry - LT , 255 , 189 , 202 , 0xFFBDCA
+603 , Cranberry , 255 , 115 , 140 , 0xFF738C
+602 , Cranberry - MED , 231 , 84 , 122 , 0xE7547A
+601 , Cranberry - DK , 222 , 57 , 105 , 0xDE3969
+600 , Cranberry - VY DK , 208 , 57 , 106 , 0xD0396A
+598 , Turquoise - LT , 208 , 223 , 205 , 0xD0DFCD
+597 , Turquoise , 128 , 151 , 132 , 0x809784
+581 , Moss Green , 151 , 152 , 49 , 0x979831
+580 , Moss Green - DK , 0 , 103 , 0 , 0x006700
+564 , Jade - VY LT , 214 , 230 , 204 , 0xD6E6CC
+563 , Jade - LT , 182 , 212 , 180 , 0xB6D4B4
+562 , Jade - MED , 97 , 134 , 97 , 0x618661
+561 , Jade - VY DK , 59 , 96 , 76 , 0x3B604C
+554 , Violet - LT , 243 , 206 , 225 , 0xF3CEE1
+553 , Violet , 160 , 100 , 146 , 0xA06492
+552 , Violet - MED , 146 , 85 , 130 , 0x925582
+550 , Violet - VY LT , 109 , 18 , 97 , 0x6D1261
+543 , Beige Brown - ULT VY LT , 239 , 214 , 188 , 0xEFD6BC
+535 , Ash Grey - VY LT , 85 , 85 , 89 , 0x555559
+524 , Fern Green - VY LT , 205 , 182 , 158 , 0xCDB69E
+523 , Fern Green - LT , 172 , 183 , 142 , 0xACB78E
+522 , Fern Green , 159 , 169 , 142 , 0x9FA98E
+772 , Pine Green - LT , 231 , 249 , 203 , 0xE7F9CB
+762 , Pearl Grey - VY LT , 232 , 232 , 229 , 0xE8E8E5
+761 , Salmon - LT , 255 , 201 , 188 , 0xFFC9BC
+760 , Salmon , 249 , 160 , 146 , 0xF9A092
+758 , Terracotta - VY LT , 255 , 177 , 147 , 0xFFB193
+754 , Peach Flesh - LT , 251 , 227 , 209 , 0xFBE3D1
+747 , Sky Blue - VY LT , 240 , 247 , 239 , 0xF0F7EF
+746 , Off White , 246 , 234 , 219 , 0xF6EADB
+745 , Yellow - LT PALE , 255 , 240 , 197 , 0xFFF0C5
+744 , Yellow - PALE , 255 , 239 , 170 , 0xFFEFAA
+743 , Yellow - MED , 255 , 230 , 146 , 0xFFE692
+742 , Tangerine - LT , 255 , 183 , 85 , 0xFFB755
+741 , Tangerine - MED , 255 , 142 , 4 , 0xFF8E04
+740 , Tangerine , 255 , 131 , 19 , 0xFF8313
+739 , Tan - ULT VY LT , 244 , 233 , 202 , 0xF4E9CA
+738 , Tan - VY LT , 244 , 195 , 139 , 0xF4C38B
+734 , Olive Green - LT , 221 , 166 , 107 , 0xDDA66B
+733 , Olive Green - MED , 206 , 155 , 97 , 0xCE9B61
+732 , Olive Green , 145 , 104 , 0 , 0x916800
+731 , Olive Green - DK *** , 140 , 103 , 0 , 0x8C6700
+730 , Olive Green - VY DK , 132 , 102 , 0 , 0x846600
+728 , Golden Yellow +++ , 242 , 174 , 63 , 0xF2AE3F
+729 , Old Gold - MED , 243 , 176 , 128 , 0xF3B080
+727 , Topaz - VY LT , 255 , 235 , 168 , 0xFFEBA8
+726 , Topaz - LT , 255 , 224 , 128 , 0xFFE080
+725 , Topaz , 255 , 200 , 124 , 0xFFC87C
+722 , Orange Spice - LT , 255 , 146 , 109 , 0xFF926D
+721 , Orange Spice - MED , 255 , 115 , 97 , 0xFF7361
+720 , Orange Spice - DK , 200 , 36 , 43 , 0xC8242B
+718 , Plum , 219 , 55 , 121 , 0xDB3779
+712 , Cream , 245 , 240 , 219 , 0xF5F0DB
+704 , Chartreuse - BRIGHT , 165 , 164 , 103 , 0xA5A467
+703 , Chartreuse , 121 , 144 , 76 , 0x79904C
+702 , Kelly Green , 79 , 121 , 66 , 0x4F7942
+701 , Christmas Green - LT , 79 , 108 , 69 , 0x4F6C45
+700 , Christmas Green - BRIGHT , 0 , 96 , 47 , 0x00602F
+699 , Christmas Green , 0 , 91 , 6 , 0x005B06
+680 , Old Gold - DK , 209 , 140 , 103 , 0xD18C67
+677 , Old Gold - VY LT , 255 , 231 , 182 , 0xFFE7B6
+828 , Blue - ULT VY LT , 237 , 247 , 238 , 0xEDF7EE
+827 , Blue - VY LT , 213 , 231 , 232 , 0xD5E7E8
+826 , Blue - MED , 115 , 138 , 153 , 0x738A99
+825 , Blue - DK , 85 , 108 , 128 , 0x556C80
+824 , Blue - VY DK , 71 , 97 , 116 , 0x476174
+823 , Navy Blue - DK , 0 , 0 , 73 , 0x000049
+822 , Beige Grey - LT , 242 , 234 , 219 , 0xF2EADB
+820 , Royal Blue - VY DK , 30 , 54 , 85 , 0x1E3655
+819 , Baby Pink - LT , 248 , 247 , 221 , 0xF8F7DD
+818 , Baby Pink , 255 , 234 , 235 , 0xFFEAEB
+817 , Coral Red - VY DK , 219 , 24 , 85 , 0xDB1855
+816 , Garnet , 179 , 0 , 91 , 0xB3005B
+815 , Garnet - MED , 166 , 0 , 91 , 0xA6005B
+814 , Garnet - DK , 162 , 0 , 88 , 0xA20058
+813 , Blue - LT , 175 , 195 , 205 , 0xAFC3CD
+809 , Delft , 190 , 193 , 205 , 0xBEC1CD
+807 , Peacock Blue , 128 , 167 , 160 , 0x80A7A0
+806 , Peacock Blue - DK *** , 30 , 130 , 133 , 0x1E8285
+803 , Blue - Deep +++ , 32 , 39 , 84 , 0x202754
+801 , Coffee Brown - DK , 123 , 71 , 20 , 0x7B4714
+800 , Delft - PALE , 233 , 238 , 233 , 0xE9EEE9
+799 , Delft - MED , 132 , 156 , 182 , 0x849CB6
+798 , Delft - DK , 103 , 115 , 141 , 0x67738D
+797 , Royal Blue , 30 , 66 , 99 , 0x1E4263
+796 , Royal Blue - DK , 30 , 58 , 95 , 0x1E3A5F
+794 , Cornflower Blue - LT , 187 , 208 , 218 , 0xBBD0DA
+793 , Cornflower Blue - MED , 147 , 139 , 164 , 0x938BA4
+792 , Cornflower Blue - DK , 97 , 97 , 128 , 0x616180
+791 , Cornflower Blue - VY DK , 71 , 55 , 93 , 0x47375D
+783 , Topaz - MED , 225 , 146 , 85 , 0xE19255
+782 , Topaz - DK , 204 , 119 , 66 , 0xCC7742
+781 , Topaz - VY DK *** , 181 , 107 , 56 , 0xB56B38
+780 , Topaz - ULT VY DK , 181 , 98 , 46 , 0xB5622E
+779 , Brown +++ , 83 , 51 , 45 , 0x633324
+777 , Red - DEEP +++ , 155 , 0 , 66 , 0x9B0042
+778 , Antique Mauve - VY LT , 255 , 199 , 184 , 0xFFC7B8
+776 , Pink - MED *** , 255 , 177 , 174 , 0xFFB1AE
+775 , Baby Blue - VY LT , 247 , 246 , 248 , 0xF7F6F8
+922 , Copper - LT , 237 , 134 , 115 , 0xED8673
+921 , Copper , 206 , 103 , 91 , 0xCE675B
+920 , Copper - MED , 197 , 94 , 88 , 0xC55E58
+919 , Red Copper , 180 , 75 , 82 , 0xB44B52
+918 , Red Copper - DK , 168 , 68 , 76 , 0xA8444C
+917 , Plum - MED , 171 , 22 , 95 , 0xAB165F
+915 , Plum - DK , 170 , 24 , 91 , 0xAA185B
+913 , Nile Green - MED , 153 , 188 , 149 , 0x99BC95
+912 , Emerald Green - LT , 115 , 158 , 115 , 0x739E73
+911 , Emerald Green - MED , 49 , 128 , 97 , 0x318061
+910 , Emerald Green - DK , 48 , 116 , 91 , 0x30745B
+909 , Emerald Green - VY DK , 49 , 105 , 85 , 0x316955
+907 , Parrot Green - LT , 185 , 200 , 102 , 0xB9C866
+906 , Parrot Green - MED , 143 , 163 , 89 , 0x8FA359
+905 , Parrot Green - DK , 98 , 119 , 57 , 0x627739
+904 , Parrot Green - VY DK , 78 , 95 , 57 , 0x4E5F39
+902 , Garnet - VY DK , 138 , 24 , 77 , 0x8A184D
+900 , Burnt Orange - DK , 206 , 43 , 0 , 0xCE2B00
+899 , Rose - MED , 233 , 109 , 115 , 0xE96D73
+898 , Coffee Brown - VY DK , 118 , 55 , 19 , 0x763713
+895 , Hunter Green - VY DK , 89 , 92 , 78 , 0x595C4E
+894 , Carnation - VY LT , 255 , 194 , 191 , 0xFFC2BF
+893 , Carnation - LT , 243 , 149 , 157 , 0xF3959D
+892 , Carnation - MED , 249 , 90 , 97 , 0xF95A61
+891 , Carnation - DK , 241 , 49 , 84 , 0xF13154
+890 , Pistachio Green - ULT DK , 79 , 86 , 76 , 0x4F564C
+869 , Hazelnut Brown - VY DK , 153 , 92 , 48 , 0x995C30
+844 , Beaver Brown - ULT DK , 107 , 103 , 102 , 0x6B6766
+842 , Beige Brown - VY LT , 219 , 194 , 164 , 0xDBC2A4
+841 , Beige Brown - LT , 188 , 134 , 107 , 0xBC866B
+840 , Beige Brown - MED , 128 , 85 , 30 , 0x80551E
+839 , Beige Brown - DK , 109 , 66 , 39 , 0x6D4227
+838 , Beige Brown - VY DK , 94 , 56 , 27 , 0x5E381B
+834 , Golden Olive - VY LT , 242 , 209 , 142 , 0xF2D18E
+833 , Golden Olive - LT , 219 , 182 , 128 , 0xDBB680
+832 , Golden Olive , 178 , 119 , 55 , 0xB27737
+831 , Golden Olive - MED , 144 , 103 , 18 , 0x906712
+830 , Golden Olive - DK , 136 , 95 , 18 , 0x885F12
+829 , Golden Olive - VY DK , 130 , 90 , 8 , 0x825A08
+977 , Golden Brown - LT , 255 , 164 , 73 , 0xFFA449
+976 , Golden Brown - MED , 246 , 141 , 57 , 0xF68D39
+975 , Golden Brown - DK , 158 , 67 , 18 , 0x9E4312
+973 , Canary-BRIGHT , 255 , 194 , 67 , 0xFFC243
+972 , Canary-DP , 255 , 146 , 0 , 0xFF9200
+971 , Pumpkin *** , 255 , 106 , 0 , 0xFF6A00
+970 , Pumpkin - LT , 255 , 117 , 24 , 0xFF7518
+967 , Peach - LT +++ , 255 , 194 , 172 , 0xFFC2AC
+966 , Baby Green - MED , 206 , 213 , 176 , 0xCED5B0
+964 , Sea Green - LT , 208 , 224 , 210 , 0xD0E0D2
+963 , Dusty Rose - ULT VY LT , 255 , 233 , 233 , 0xFFE9E9
+962 , Dusty Rose - MED , 253 , 134 , 141 , 0xFD868D
+961 , Dusty Rose - DK , 243 , 108 , 123 , 0xF36C7B
+959 , Sea Green - MED , 171 , 206 , 177 , 0xABCEB1
+958 , Sea Green - DK , 0 , 160 , 130 , 0x00A082
+957 , Geranium - PALE , 255 , 204 , 208 , 0xFFCCD0
+956 , Geranium , 255 , 109 , 115 , 0xFF6D73
+955 , Nile Green - LT , 214 , 230 , 204 , 0xD6E6CC
+954 , Nile Green , 170 , 213 , 164 , 0xAAD5A4
+951 , Flesh , 255 , 229 , 188 , 0xFFE5BC
+950 , Sportsman Flesh , 239 , 162 , 127 , 0xEFA27F
+948 , Peach Flesh - VY LT , 255 , 243 , 231 , 0xFFF3E7
+947 , Burnt Orange , 255 , 91 , 0 , 0xFF5B00
+946 , Burnt Orange - MED , 244 , 73 , 0 , 0xF44900
+945 , Flesh - MED , 255 , 206 , 164 , 0xFFCEA4
+943 , Aquamarine - MED , 0 , 162 , 117 , 0x00A275
+939 , Navy Blue - VY DK , 0 , 0 , 49 , 0x000031
+938 , Coffee Brown - ULT DK , 99 , 39 , 16 , 0x632710
+937 , Avocado Green - MED , 73 , 86 , 55 , 0x495637
+936 , Avocado Green - VY DK , 69 , 69 , 49 , 0x454531
+935 , Avocado Green - DK , 67 , 63 , 47 , 0x433F2F
+934 , Black Avocado Green , 62 , 59 , 40 , 0x3E3B28
+932 , Antique Blue - LT , 182 , 186 , 194 , 0xB6BAC2
+931 , Antique Blue - MED , 124 , 135 , 145 , 0x7C8791
+930 , Antique Blue - DK , 102 , 122 , 140 , 0x667A8C
+928 , Grey Green - VY LT , 225 , 224 , 216 , 0xE1E0D8
+927 , Grey Green - LT , 200 , 198 , 194 , 0xC8C6C2
+926 , Grey Green - LT , 96 , 116 , 115 , 0x607473
+924 , Grey Green - VY DK , 86 , 99 , 100 , 0x566364
+3348 , Yellow Green - LT , 225 , 249 , 190 , 0xE1F9BE
+3347 , Yellow Green - MED , 128 , 152 , 115 , 0x809873
+3346 , Hunter Green , 120 , 134 , 107 , 0x78866B
+3345 , Hunter Green - DK , 97 , 100 , 82 , 0x616452
+3341 , Apricot , 255 , 172 , 162 , 0xEBACA2
+3340 , Apricot - MED , 255 , 123 , 103 , 0xFF7B67
+3328 , Salmon - DK , 188 , 64 , 85 , 0xBC4055
+3326 , Rose - LT , 255 , 157 , 150 , 0xFF9D96
+3325 , Baby Blue - LT , 202 , 226 , 229 , 0xCAE2E5
+3078 , Golden Yellow - VY LT , 255 , 255 , 220 , 0xFFFFDC
+3072 , Beaver Grey - VY LT , 233 , 233 , 223 , 0xE9E9DF
+3064 , Sportsman Flesh - VY DK , 194 , 101 , 76 , 0xC2654C
+3053 , Green Grey , 187 , 179 , 148 , 0xBBB394
+3052 , Green Grey - MED , 137 , 141 , 114 , 0x898D72
+3051 , Green Grey - DK , 85 , 73 , 0 , 0x554900
+3047 , Yellow Beige - LT , 255 , 236 , 211 , 0xFFECD3
+3046 , Yellow Beige - MED , 229 , 193 , 139 , 0xE5C18B
+3045 , Yellow Beige - DK , 216 , 151 , 105 , 0xD89769
+3042 , Antique Violet - LT , 225 , 205 , 200 , 0xE1CDC8
+3041 , Antique Violet - MED , 190 , 155 , 167 , 0xBE9BA7
+3033 , Mocha Brown - VY LT , 239 , 219 , 190 , 0xEFDBBE
+3032 , Mocha Brown - MED , 188 , 156 , 120 , 0xBC9C78
+3031 , Mocha Brown - VY DK , 84 , 56 , 23 , 0x543817
+3024 , Brown Grey - VY LT , 210 , 208 , 205 , 0xD2D0CD
+3023 , Brown Grey - LT , 198 , 190 , 173 , 0xC6BEAD
+3022 , Brown Grey - MED , 172 , 172 , 170 , 0xACACAA
+3021 , Brown Grey - VY DK , 115 , 91 , 93 , 0x735B5D
+3013 , Khaki Green - LT , 208 , 195 , 164 , 0xD0C3A4
+3012 , Khaki Green - MED , 170 , 134 , 103 , 0xAA8667
+3011 , Khaki Green - DK , 123 , 91 , 64 , 0x7B5B40
+996 , Electric Blue - MED , 170 , 222 , 225 , 0xAADEE1
+995 , Electric Blue - DK , 0 , 123 , 134 , 0x007B86
+993 , Aquamarine - LT , 192 , 224 , 200 , 0xC0E0C8
+992 , Aquamarine , 146 , 183 , 165 , 0x92B7A5
+991 , Aquamarine - DK , 47 , 91 , 73 , 0x2F5B49
+989 , Forest Green , 134 , 153 , 110 , 0x86996E
+988 , Forest Green - MED , 134 , 145 , 110 , 0x86916E
+987 , Forest Green - DK , 83 , 97 , 73 , 0x536149
+986 , Forest Green - VY DK , 58 , 82 , 65 , 0x3A5241
+3768 , Grey Green - DK , 92 , 110 , 108 , 0x5C6E6C
+3766 , Peacock Blue - LT , 24 , 101 , 111 , 0x18656F
+3765 , Peacock Blue - VY DK , 24 , 128 , 134 , 0x188086
+3761 , Sky Blue - LT , 227 , 234 , 230 , 0xE3EAE6
+3760 , Wedgwood , 102 , 142 , 152 , 0x668E98
+3756 , Baby Blue - ULT VY LT , 248 , 248 , 252 , 0xF8F8FC
+3755 , Baby Blue , 158 , 176 , 206 , 0x9EB0CE
+3753 , Antique Blue - ULT VY LT , 237 , 247 , 247 , 0xEDF7F7
+3752 , Antique Blue - VY LT , 194 , 209 , 206 , 0xC2D1CE
+3750 , Antique Blue - VY DK , 12 , 91 , 108 , 0x0C5B6C
+3747 , Blue Violet - VY LT , 230 , 236 , 232 , 0xE6ECE8
+3746 , Blue Violet - DK , 149 , 102 , 162 , 0x9566A2
+3743 , Antique Violet - VY LT , 235 , 235 , 231 , 0xEBEBE7
+3740 , Antique Violet - DK , 156 , 125 , 133 , 0x9C7D85
+3733 , Dusty Rose , 255 , 154 , 148 , 0xFF9A94
+3731 , Dusty Rose - VY DK , 209 , 93 , 103 , 0xD15D67
+3727 , Antique Mauve - LT , 255 , 199 , 196 , 0xFFC7C4
+3726 , Antique Mauve - DK , 195 , 118 , 123 , 0xC3767B
+3722 , Shell Pink - MED , 184 , 89 , 88 , 0xB85958
+3721 , Shell Pink - DK , 184 , 75 , 77 , 0xB84B4D
+3716 , Dusty Rose - VY LT , 255 , 211 , 212 , 0xFFD3D4
+3713 , Salmon - VY LT , 253 , 229 , 217 , 0xFDE5D9
+3712 , Salmon - MED , 230 , 101 , 107 , 0xE6656B
+3708 , Melon - LT , 254 , 212 , 219 , 0xFED4DB
+3706 , Melon - MED , 255 , 128 , 109 , 0xFF806D
+3705 , Melon - DK , 255 , 85 , 91 , 0xFF555B
+3689 , Mauve - LT , 255 , 213 , 216 , 0xFFD5D8
+3688 , Mauve - MED , 250 , 151 , 144 , 0xFA9790
+3687 , Mauve , 203 , 78 , 97 , 0xCB4E61
+3685 , Mauve - DK , 161 , 53 , 79 , 0xA1354F
+3609 , Plum - ULT LT , 255 , 214 , 229 , 0xFFD6E5
+3608 , Plum - VY LT , 247 , 152 , 182 , 0xF798B6
+3607 , Plum - LT , 231 , 79 , 134 , 0xE74F86
+3371 , Black Brown , 83 , 37 , 16 , 0x532510
+3364 , Pine Green , 161 , 167 , 135 , 0xA1A787
+3363 , Pine Green - MED , 116 , 127 , 96 , 0x747F60
+3362 , Pine Green - DK , 96 , 95 , 84 , 0x605F54
+3354 , Dusty Rose - LT , 255 , 214 , 209 , 0xFFD6D1
+3350 , Dusty Rose - ULT DK , 201 , 79 , 91 , 0xC94F5B
+3825 , Pumpkin - PALE , 255 , 171 , 131 , 0xFFAB83
+3824 , Apricot - LT , 247 , 191 , 183 , 0xF7BFB7
+3823 , Yellow - ULT PALE , 255 , 251 , 227 , 0xFFFBE3
+3822 , Straw - LT , 255 , 211 , 107 , 0xFFD36B
+3821 , Straw , 243 , 195 , 91 , 0xF3C35B
+3820 , Straw - DK , 231 , 179 , 75 , 0xE7B34B
+3819 , Moss Green - LT , 231 , 235 , 123 , 0xE7EB7B
+3818 , Emerald Green - ULT VY DK , 0 , 107 , 46 , 0x006B2F
+3817 , Celadon Green - LT , 175 , 207 , 191 , 0xAFCFBF
+3816 , Celadon Green , 135 , 167 , 147 , 0x87A793
+3815 , Celadon Green - DK , 99 , 127 , 107 , 0x637F6B
+3814 , Aquamarine , 35 , 143 , 107 , 0x238F6B
+3813 , Blue Green - LT , 151 , 195 , 171 , 0x97C3AB
+3812 , Sea Green - VY DK , 23 , 147 , 119 , 0x179377
+3811 , Turquoise - VY LT , 187 , 227 , 235 , 0xBBE3EB
+3810 , Turquoise - DK , 59 , 135 , 151 , 0x3B8797
+3809 , Turquoise - VY DK , 31 , 107 , 123 , 0x1F6B7B
+3808 , Turquoise - ULT VY DK , 11 , 83 , 95 , 0x0B535F
+3807 , Cornflower Blue , 59 , 75 , 131 , 0x3B4B83
+3806 , Cyclamen Pink - LT , 255 , 87 , 155 , 0xFF579B
+3805 , Cyclamen Pink , 243 , 71 , 139 , 0xF3478B
+3804 , Cyclamen Pink - DK , 231 , 59 , 127 , 0xE73B7F
+3803 , Mauve - MED , 171 , 51 , 87 , 0xAB3357
+3802 , Antique Mauve - VY DK , 127 , 43 , 59 , 0x7F2B3B
+3801 , Christmas Red - LT , 231 , 71 , 79 , 0xE7474F
+3799 , Pewter Grey - VY DK , 81 , 76 , 83 , 0x514C53
+3790 , Beige Grey - ULT DK , 140 , 117 , 109 , 0x8C756D
+3787 , Brown Grey - DK , 139 , 109 , 115 , 0x8B6D73
+3782 , Mocha Brown - LT , 206 , 175 , 144 , 0xCEAF90
+3781 , Mocha Brown - DK , 113 , 71 , 42 , 0x71472A
+3779 , Terracotta - ULT VY LT , 255 , 177 , 152 , 0xFFB198
+3778 , Terracotta - LT , 237 , 122 , 100 , 0xED7A64
+3777 , Terracotta - VY DK , 191 , 64 , 36 , 0xBF4024
+3776 , Mahogany - LT , 221 , 109 , 91 , 0xDD6D5B
+3774 , Sportsman Flesh - VY LT , 255 , 220 , 193 , 0xFFDCC1
+3773 , Sportsman Flesh - MED *** , 231 , 134 , 103 , 0xE78667
+3772 , Dark Flesh , 173 , 83 , 62 , 0xAD533E
+3771 , Peach - DK +++ , 232 , 172 , 155 , 0xE8AC9B
+3770 , Light Flesh - VY LT , 255 , 250 , 224 , 0xFFFAE0
+9999 , Bright White , 255 , 255 , 255 , 0xFFFFFF
+3866 , Mocha Brown - ULT VY LT , 245 , 233 , 213 , 0xF5E9D5
+3865 , Winter White , 255 , 251 , 244 , 0xFFFBF4
+3864 , Mocha Beige - LT , 196 , 166 , 141 , 0xC4A68D
+3863 , Mocha Beige - MED , 134 , 106 , 88 , 0x866A58
+3862 , Mocha Beige - DK , 107 , 83 , 71 , 0x6B5347
+3861 , Cocoa - LT , 146 , 121 , 120 , 0x927978
+3860 , Cocoa , 98 , 77 , 76 , 0x624D4C
+3859 , Rosewood - LT , 177 , 114 , 106 , 0xB1726A
+3858 , Rosewood - MED , 102 , 63 , 65 , 0x663F41
+3857 , Rosewood - DK , 72 , 43 , 47 , 0x482B2F
+3856 , Mahogany - ULT VY LT , 255 , 190 , 130 , 0xFFBE82
+3855 , Autumn Gold - LT , 253 , 228 , 174 , 0xFDE4AE
+3854 , Autumn Gold - MED , 248 , 171 , 99 , 0xF8AB63
+3853 , Autumn Gold - DK , 229 , 121 , 75 , 0xE5794B
+3852 , Straw - VY DK , 220 , 163 , 59 , 0xDCA33B
+3851 , Bright Green - LT , 90 , 165 , 140 , 0x5AA58C
+3850 , Bright Green - DK , 50 , 125 , 100 , 0x327D64
+3849 , Teal Green - LT , 90 , 165 , 140 , 0x5AA58C
+3848 , Teal Green - MED , 65 , 105 , 97 , 0x416961
+3847 , Teal Green - DK , 48 , 77 , 68 , 0x304D44
+3846 , Bright Turquoise - LT , 82 , 173 , 234 , 0x52ADEA
+3845 , Bright Turquoise - MED , 63 , 145 , 213 , 0x3F91D5
+3844 , Bright Turquoise - DK , 43 , 91 , 155 , 0x2B5B9B
+3843 , Electric Blue , 12 , 170 , 224 , 0x0CAAE0
+3842 , Wedgwood - DK , 12 , 65 , 88 , 0x0C4158
+3841 , Baby Blue - PALE , 199 , 221 , 235 , 0xC7DDEB
+3840 , Lavender Blue - LT , 162 , 186 , 238 , 0xA2BAEE
+3839 , Lavender Blue - MED , 107 , 123 , 189 , 0x6B7BBD
+3838 , Lavender Blue - DK , 80 , 90 , 162 , 0x505AA2
+3837 , Lavender - ULT DK , 109 , 69 , 137 , 0x6D4589
+3836 , Grape - LT , 175 , 130 , 158 , 0xAF829E
+3835 , Grape - MED , 113 , 80 , 105 , 0x715069
+3834 , Grape - DK , 76 , 50 , 69 , 0x4C3245
+3833 , Raspberry - LT , 224 , 124 , 134 , 0xE07C86
+3832 , Raspberry - MED , 215 , 95 , 104 , 0xD75F68
+3831 , Raspberry - DK , 170 , 68 , 77 , 0xAA444D
+3830 , Terracotta , 199 , 79 , 71 , 0xC74F47
+3829 , Old Gold - VY DK , 203 , 111 , 0 , 0xCB6F00
+3828 , Hazelnut Brown , 187 , 135 , 63 , 0xBB873F
+3827 , Golden Brown - PALE , 247 , 187 , 119 , 0xF7BB77
+3826 , Golden Brown , 227 , 155 , 79 , 0xE39B4F
