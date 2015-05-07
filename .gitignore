@@ -58,3 +58,6 @@ target/
 
 #emacs
 *.*~
+
+#Jupyter
+*.ipynb_checkpoints
