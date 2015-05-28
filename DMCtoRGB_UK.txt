@@ -65,12 +65,12 @@
 519 , Sky Blue , 194 , 209 , 207 , 0xC2D1CF
 518 , Wedgwood - LT , 102 , 148 , 154 , 0x66949A
 517 , Wedgwood - MED , 16 , 127 , 135 , 0x107F87
-505 , Grass Green - DK +++ , 58206 , 99221 , 64193 , 0x3A6340
+505 , Grass Green - DK +++ , 51 , 131 , 98 , 0x3A6340
 504 , Blue Green - LT *** , 206 , 221 , 193 , 0xCEDDC1
 503 , Blue Green - MED , 195 , 206 , 183 , 0xC3CEB7
 502 , Blue Green , 134 , 158 , 134 , 0x869E86
 501 , Blue Green - DK , 67 , 85 , 73 , 0x435549
-500 , Blue Green - VY DK , 43 , 57 , 41 , 0x2B3929
+500 , Blue Green - VY DK , 4 , 77 , 51 , 0x2B3929
 498 , Christmas Red - LT , 187 , 0 , 97 , 0xBB0061
 472 , Avocado Green - ULT LT , 238 , 255 , 182 , 0xEEFFB6
 471 , Avocado Green - VY LT , 176 , 187 , 140 , 0xB0BB8C
@@ -432,10 +432,10 @@
 3849 , Teal Green - LT , 90 , 165 , 140 , 0x5AA58C
 3848 , Teal Green - MED , 65 , 105 , 97 , 0x416961
 3847 , Teal Green - DK , 48 , 77 , 68 , 0x304D44
-3846 , Bright Turquoise - LT , 82 , 173 , 234 , 0x52ADEA
+3846 , Bright Turquoise - LT , 6 , 227 , 230 , 0x52ADEA
 3845 , Bright Turquoise - MED , 63 , 145 , 213 , 0x3F91D5
 3844 , Bright Turquoise - DK , 43 , 91 , 155 , 0x2B5B9B
-3843 , Electric Blue , 12 , 170 , 224 , 0x0CAAE0
+3843 , Electric Blue , 20 , 170 , 208 , 0x0CAAE0
 3842 , Wedgwood - DK , 12 , 65 , 88 , 0x0C4158
 3841 , Baby Blue - PALE , 199 , 221 , 235 , 0xC7DDEB
 3840 , Lavender Blue - LT , 162 , 186 , 238 , 0xA2BAEE
