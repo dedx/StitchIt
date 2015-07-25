@@ -39,7 +39,7 @@ def testme(verbosity = 1):
     
     #Retrieve image file
     response = requests.get(imgurl)
-    before = ndi.imread(StringIO(response.content))
+    before = ndi.imread(StringIO(response.content),mode="RGB")
     #Reduce the size of the image
     smaller = resize(before,reduct)
     if verbosity > 0:
@@ -350,7 +350,7 @@ def color_dictionary(after,aidasize,pattern_name,aidacolor):
     plt.text(0.1,0.78,"DMC")
     plt.text(0.25,0.78,"Symbol")
     plt.text(0.4,0.78,"Color")
-    plt.text(0.52,0.78,"Skeins")
+    plt.text(0.52,0.78,"Yards")
     plt.text(0.65,0.78,"Description")
     plt.plot((0.08,0.9),(0.775,0.775),"k")
     ax.set_xticklabels([])
@@ -372,7 +372,7 @@ def color_dictionary(after,aidasize,pattern_name,aidacolor):
             plt.plot(0.278,0.78-i*yspace+0.003,marker="$\mathrm{\mathsf{%s}}$"%colsymb[(col[0],col[1],col[2])],markersize=8,color='k')
         #plt.plot(0.282,0.78-(i-0.1)*yspace+0.0025, 's',markersize=10,markerfacecolor='None')
         plt.plot(0.425,0.78-(i-0.1)*yspace+0.0025, 's',markersize=10,markerfacecolor=(col[0]/255.,col[1]/255.,col[2]/255.))
-        plt.text(0.56,0.78-i*yspace,"%.0f"%np.ceil(sc),ha='right')
+        plt.text(0.56,0.78-i*yspace,"%.0f"%np.ceil(yc),ha='right')
         plt.text(0.65,0.78-i*yspace,"%s"%labels[index[0],0][0])
         
         i += 1
