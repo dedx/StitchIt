@@ -6,7 +6,7 @@ Anyway, the code you find here will create a counted cross-stitch pattern from a
 
 I provided an IPython/JuPyteR notebook "CrossStitch.ipynb" with a step-by-step example of how the code is used to create the pattern, showing the steps of the process, with helpful display output. To create your own pattern, just modify the list of inputs and execute the remaining code cells. The default pattern created here is from a Higgs Boson Event image on wikipedia. If you want to skip the "how it works" part, the pattern can also be created with one call to the `testme` function provided with the code library.  Note that the pattern might be slightly different each time you run the code because the color reduction algorithm has some randomness associated with how it seeds the vector of colors.
 
-Some of the code is still rough.  For example, since it was written with the Higgs Boson event as the template, the black background color is treated specially.  I'd like to make it more robust so that it can handle any image file with any background color. There are a few other quirks as well, but overall I am pretty happy with it.  If you have any ideas and want to contribute to making it better, let me know.
+Some of the code is still rough.  For example, since it was written with the Higgs Boson event as the template, the black background color is treated specially.  I'd like to make it more robust so that it can handle any image file with any background color. It could also use some more documentatuion, and there are a few other quirks as well, but overall I am pretty happy with it.  If you have any ideas and want to contribute to making it better, let me know.
 
 Happy stitching!
 
