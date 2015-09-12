@@ -1,4 +1,4 @@
-# StitchIt
+# StitchIt!
 
 This repository holds the code for a little STEAM (Science Technology Engineering Arts and Math) hobby project I started last Spring to combine my loves of coding, counted cross-stitch, and particle physics.  You know, like you do.  I really wanted to make a counted cross-stitch pattern from a particle collision event display image.  Sure, there are online and commercial software packages that I could have used to get the pattern without much work, but this was a case where I could easily envision how to write the code and I was really excited to write my own pattern creator.  No different from cooking fancy food at home in the kitchen.  Sure I could go to a restaurant and get a professional to make it for me, but where's the fun in that?  Well, actually that *is* a lot of fun, but so is cooking your own masterpieces.
 
