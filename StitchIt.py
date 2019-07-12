@@ -6,21 +6,22 @@
 # Author: J.L. Klay
 # Date: 17-July-2015
 #
-
+# Update: 10-July-2019
+# Migrated to Python3.7 - Copyright 2019 StitchIt
+#
+#
 #Imports
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy as sp
-import scipy.ndimage as ndi
 from scipy.misc import imresize
 import requests
-from StringIO import StringIO
-from scipy.cluster.vq import kmeans,vq
+from io import BytesIO
 from sklearn.utils import shuffle
 import random
 import datetime
 from matplotlib.backends.backend_pdf import PdfPages
-
+from sklearn import cluster
 
 #Test function
 def testme(verbosity = 1):
@@ -39,7 +40,7 @@ def testme(verbosity = 1):
     
     #Retrieve image file
     response = requests.get(imgurl)
-    before = ndi.imread(StringIO(response.content),mode="RGB")
+    before = plt.imread(BytesIO(response.content),format="jpg")
     #Reduce the size of the image
     smaller = resize(before,reduct)
     if verbosity > 0:
@@ -59,7 +60,7 @@ def testme(verbosity = 1):
     if verbosity > 1:
         view_colors(summary)
     #Create the final pattern
-    print "Creating your pattern in a file called Pattern.pdf.  Enjoy!"
+    print("Creating your pattern in a file called Pattern.pdf.  Enjoy!")
     make_pattern(before,after,aidasize,imgurl,pattern_name,aidacolor)
     
 
@@ -72,36 +73,51 @@ def resize(image,scale=25):
     '''
     return imresize(image,scale,mode="RGB")
 
+
+    width, height, depth = raster.shape
+    reshaped_raster = np.reshape(raster, (width * height, depth))
+
+    model = cluster.KMeans(n_clusters=n_colors)
+    labels = model.fit_predict(reshaped_raster)
+    palette = model.cluster_centers_.astype(int)
+    quantized_raster = np.reshape(
+        palette[labels], (width, height, palette.shape[1])).astype(int)
+
+    counts,bins = sp.histogram(quantized_raster, len(palette))
+    return palette,counts,quantized_raster
+
 #Kmeans algorithm to reduce number of colors
-def reduce_colors(image, k):
+def reduce_colors(raster, n_colors):
     '''Apply kmeans algorithm.
+        From: https://lmcaraig.com/color-quantization-using-k-means/
         Input:   image, number of clusters to use
         Returns: colors, 
                  counts per color, 
                  new image
     '''
-    if k > 32:
-        print "Setting colors to maximum allowed of 32"
-        k = 32
-    rows, cols, rgb = image.shape
+    if n_colors > 32:
+        print("Setting colors to maximum allowed of 32")
+        n_colors = 32
+
     # reshape the image in a single row array of RGB pixels
-    image_row = np.reshape(image,(rows * cols, 3))
-    #HERE ADD CODE TO GET A GOOD GUESS OF COLORS AND PASS THAT AS
-    #SECOND ARGUMENT TO kmeans
-    #image_array_sample = shuffle(image_row, random_state=0)[:1000]
-    #kguess = kmeans(image_array_sample, k)
-    #colors,_ = kmeans(image_row, kguess)
-    # perform the clustering
-    colors,_ = kmeans(image_row, k)
-    # vector quantization, assign to each pixel the index of the nearest centroid (i=1..k)
-    qnt,_ = vq(image_row,colors)
-    # reshape the qnt vector to the original image shape
-    image_centers_id = np.reshape(qnt,(rows, cols))
-    # assign the color value to each pixel
-    newimage = colors[image_centers_id]
+    width, height, depth = raster.shape
+    reshaped_raster = np.reshape(raster, (width * height, depth))
+
+    #HERE ADD CODE TO GET A GOOD GUESS OF COLORS AND PASS THAT AS                                                                     #SECOND ARGUMENT TO kmeans 
+
+    # perform the clustering to find the best color vector 
+    model = cluster.KMeans(n_clusters=n_colors)
+    # determine the pixel labels that most closely match each color
+    labels = model.fit_predict(reshaped_raster)
+    # this is the color palette, converted to integer RGB values
+    palette = model.cluster_centers_.astype(int)
+    # assign the new colors to each pixel and reshape to match original image
+    quantized_raster = np.reshape(
+        palette[labels], (width, height, palette.shape[1]))
     #count number of pixels of each cluster color
-    counts,bins = sp.histogram(qnt, len(colors))
-    return colors, counts, newimage
+    counts,bins = sp.histogram(quantized_raster, len(palette))
+    return palette,counts,quantized_raster
+
 
 #JLK: Look into providing an array of RGB values corresponding to 
 #available floss and using those to determine the clustering
@@ -126,8 +142,8 @@ def color_count(image):
     numcol = np.empty(len(unique),dtype=np.uint32)
     i = 0
     for col,num in zip(unique,counts):
-        R = col/(256*256)
-        G = (col-R*256*256)/256
+        R = col//(256*256)
+        G = (col-R*256*256)//256
         B = (col-R*256*256-G*256)
         colors[i] = (R,G,B)
         numcol[i] = num
@@ -145,7 +161,7 @@ def load_floss_colors(example=False):
     values = np.loadtxt('DMCtoRGB_JLK.txt', delimiter=' , ',dtype=int, usecols=[0,2,3,4])
     labels = np.loadtxt('DMCtoRGB_JLK.txt', delimiter=' , ',dtype=str, usecols=[1,5])
     if example:
-        print "Example: ",values[27],labels[27]
+        print("Example: ",values[27],labels[27])
     return values,labels
 
 #Use distance in RGB space to determine closest color match
@@ -170,7 +186,7 @@ def match_color(rgb,method="Euclidean"):
     gdiff2 = (rgb[1]-values[:,2])**2
     bdiff2 = (rgb[2]-values[:,3])**2
     cdiff = np.sqrt(rdiff2+gdiff2+bdiff2)
-    #print "Input rgb: ",rgb,"\tClosest match:",values[cdiff.argmin()],labels[cdiff.argmin()]
+    #print("Input rgb: ",rgb,"\tClosest match:",values[cdiff.argmin()],labels[cdiff.argmin()])
 
     if method == "Euclidean":
         return values[cdiff.argmin()],labels[cdiff.argmin()]
@@ -230,12 +246,12 @@ def floss_color_counts(colors,counts,aidasize=14,verbosity=1):
     #Create a list of skein color count, code, and name
     summary = []
     if verbosity > 0:
-        print "Counts\tRGBColor\tFloss#\tFlossRGB\t#Skeins\tFlossName"
-        print "====================================================================================="    
+        print("Counts\tRGBColor\tFloss#\tFlossRGB\t#Skeins\tFlossName")
+        print("=====================================================================================")    
     for i in range(len(counts)-1,-1,-1):
         matches = match_color(sortedcolors[i])
         if verbosity > 0:
-            print mycounts[i],"\t",sortedcolors[i],"\t",matches[0][0],"\t",matches[0][1:],"\t %.2f"%skeinspercolor[i],"\t",matches[1]
+            print(mycounts[i],"\t",sortedcolors[i],"\t",matches[0][0],"\t",matches[0][1:],"\t %.2f"%skeinspercolor[i],"\t",matches[1])
         summary.append((float("%.2f"%skeinspercolor[i]),matches[0][0],matches[1][0],(sortedcolors[i]),(matches[0][1:])))
     return summary
 
@@ -249,7 +265,7 @@ def replace_color(image,color,match,verbosity=1):
         Outputs: Modifies input image file
     '''
     if verbosity > 0:
-        print color,"\t--->\t",match
+        print(color,"\t--->\t",match)
     #find all indices in image with original color
     indices = np.where(np.all(image == color, axis=-1))
     #replace original color at indices in image with matched color
@@ -267,10 +283,10 @@ def aida_size(pic,aida=14,verbosity=0):
     #Image shape is (row,col): rows reflect size in y-dim and cols reflect size in x-dim
     y,x,col = pic.shape
     if verbosity > 0:
-        print "Pixel dimensions: (%d x %d)"%(x,y)
-        print "Aida Cloth count: %d"%aida
-        print "Pattern dimensions: (%.2f in x %.2f in)"%(x/float(aida),y/float(aida))
-        print "Pattern colors: %d"%(color_count(pic)[1]).size
+        print("Pixel dimensions: (%d x %d)"%(x,y))
+        print("Aida Cloth count: %d"%aida)
+        print("Pattern dimensions: (%.2f in x %.2f in)"%(x/float(aida),y/float(aida)))
+        print("Pattern colors: %d"%(color_count(pic)[1]).size)
     return x/float(aida), y/float(aida)
 
 #Plot the image before and after manipulation
@@ -357,10 +373,11 @@ def color_dictionary(after,aidasize,pattern_name,aidacolor):
     ax.set_xticks([])
     ax.set_yticklabels([])
     ax.set_yticks([])
-    ax.text(0.25,0.02,"$\copyright$ 2015 StitchIt - https://github.com/dedx/StitchIt")
+    ax.text(0.25,0.02,"$\copyright$ 2019 StitchIt - https://github.com/dedx/StitchIt")
     yspace = 0.03
     i = 1
     colsymb = symbol_dictionary(colors)
+    index = np.where(np.all(values[:,1:] == (255, 226, 226), axis=-1))
     for col,yc,sc in zip(colors,yards,skeins):
         #Find the index where color appears in the floss list
         index = np.where(np.all(values[:,1:] == col, axis=-1))
@@ -371,7 +388,7 @@ def color_dictionary(after,aidasize,pattern_name,aidacolor):
             #plt.text(0.278,0.78-i*yspace+0.003, colsymb[(col[0],col[1],col[2])], fontname='STIXGeneral',size=12, va='center', ha='center', clip_on=True)
             plt.plot(0.278,0.78-i*yspace+0.003,marker="$\mathrm{\mathsf{%s}}$"%colsymb[(col[0],col[1],col[2])],markersize=8,color='k')
         #plt.plot(0.282,0.78-(i-0.1)*yspace+0.0025, 's',markersize=10,markerfacecolor='None')
-        plt.plot(0.425,0.78-(i-0.1)*yspace+0.0025, 's',markersize=10,markerfacecolor=(col[0]/255.,col[1]/255.,col[2]/255.))
+        plt.plot(0.425,0.78-(i-0.1)*yspace+0.0025, 's',markersize=10,markerfacecolor=(col[0]/255.,col[1]/255.,col[2]/255.),markeredgecolor='k')
         plt.text(0.56,0.78-i*yspace,"%.0f"%np.ceil(yc),ha='right')
         plt.text(0.65,0.78-i*yspace,"%s"%labels[index[0],0][0])
         
@@ -432,7 +449,7 @@ def locate_color(image,color):
         Returns: NumPy arrays of col,row indices where this color is located in this image
     '''
     indices = np.where(np.all(image == color, axis=-1))
-    #print zip(indices[0], indices[1])
+    #print(zip(indices[0], indices[1]))
     return indices[1], indices[0] #row,col vs. x,y  
 
 #Create pattern coverpage
@@ -489,7 +506,7 @@ def cover_page(before,after,aidasize,imgurl,pattern_name,aidacolor):
     ax4.text(0.5,0.85,"Original image url:",fontweight='bold',fontsize=6,ha='center')
     ax4.text(0.5,0.8,"%s"%imgurl,fontsize=6,ha='center')
     
-    ax4.text(0.5,0.5,"$\copyright$ 2015 StitchIt - https://github.com/dedx/StitchIt",fontsize=15,ha='center')
+    ax4.text(0.5,0.5,"$\copyright$ 2019 StitchIt - https://github.com/dedx/StitchIt",fontsize=15,ha='center')
     
     ax4.set_xticklabels([])
     ax4.set_xticks([])
@@ -539,12 +556,12 @@ def make_pattern(before,after,aidasize,imgurl,pattern_name,aidacolor):
     with PdfPages('Pattern.pdf') as pdf:
         cover_page(before,after,aidasize,imgurl,pattern_name,aidacolor)
         pdf.savefig(papertype='letter',bbox_inches='tight')
-        print "Adding Cover page"
+        print("Adding Cover page")
         plt.close()
         page = 0
         colsymb = color_dictionary(after,aidasize,pattern_name,aidacolor)
         pdf.savefig(papertype='letter',bbox_inches='tight')
-        print "Adding page %d"%page
+        print("Adding page %d"%page)
         plt.close()
         for row in range(pgsy): #row=y
             for col in range(pgsx): #col=x
@@ -591,10 +608,10 @@ def make_pattern(before,after,aidasize,imgurl,pattern_name,aidacolor):
                         #plt.text(x+pxmin+0.5,y+pymin+0.5, colsymb[color], fontname='STIXGeneral',size=12, va='center', ha='center', clip_on=True)
                         plt.plot(x+pxmin+0.5,y+pymin+0.5, marker="$\mathrm{\mathsf{%s}}$" % colsymb[color], markersize=4,color='k',lw = 0,markeredgecolor=None)
     
-                ax.text(pltxmin+40,pltymin+4,"$\copyright$ 2015 StitchIt - https://github.com/dedx/StitchIt")
+                ax.text(pltxmin+40,pltymin+4,"$\copyright$ 2019 StitchIt - https://github.com/dedx/StitchIt")
                 ax.text(pltxmin,pltymin+4,"(%d,%d) pg %d of %d"%(row,col,page,pgsx*pgsy))
                 pdf.savefig(papertype='letter',bbox_inches='tight')
-                print "Adding page %d"%page
+                print("Adding page %d"%page)
                 plt.close()
                 
                 # We can also set the file's metadata via the PdfPages object:
@@ -603,10 +620,10 @@ def make_pattern(before,after,aidasize,imgurl,pattern_name,aidacolor):
                 d['Author'] = 'J.L. Klay'
                 d['Subject'] = 'Custom cross-stitch pattern file'
                 d['Keywords'] = 'PdfPages cross-stitch multipage keywords author title subject'
-                d['CreationDate'] = datetime.datetime(2015, 7, 17)
+                d['CreationDate'] = datetime.datetime(2019, 7, 11)
                 d['ModDate'] = datetime.datetime.today()   
                 
-    print "All DONE!"
+    print("All DONE!")
 
 
 #A few extra utilities
@@ -625,9 +642,9 @@ def pagination(after):
     pgsx = int(np.ceil(after.shape[1]/float(gridx)))
     pgsy = int(np.ceil(after.shape[0]/float(gridy)))
 
-    print "Portrait:"
-    print "xdim: %d pixels / %d pxperpg = %d pages"%(after.shape[1],gridx,pgsx)
-    print "ydim: %d pixels / %d pxperpg = %d pages"%(after.shape[0],gridy,pgsy)
+    print("Portrait:")
+    print("xdim: %d pixels / %d pxperpg = %d pages"%(after.shape[1],gridx,pgsx))
+    print("ydim: %d pixels / %d pxperpg = %d pages"%(after.shape[0],gridy,pgsy))
 
     pxperpg_x = np.zeros([pgsy, pgsx],dtype=int)+80
     pxperpg_y = np.zeros([pgsy, pgsx],dtype=int)+100
@@ -635,8 +652,8 @@ def pagination(after):
     #topmost pages have 90 px in x, next n have 100 each, bottommost have remainder
     pxperpg_x[:,0] -= 10; pxperpg_x[:,-1] = after.shape[1]-pxperpg_x[0,0:-1].sum()
     pxperpg_y[0,:] -= 10; pxperpg_y[-1,:] = after.shape[0]-pxperpg_y[0:-1,0].sum()
-    print pxperpg_x,"\n",pxperpg_x[0].sum()
-    print pxperpg_y,"\n",pxperpg_y[:,0].sum()
+    print(pxperpg_x,"\n",pxperpg_x[0].sum())
+    print(pxperpg_y,"\n",pxperpg_y[:,0].sum())
 
     plt.figure(27,figsize=(4*sizex/sizey,4*sizey/sizex))
     ax = plt.axes([0,0,1,1])
@@ -671,9 +688,9 @@ def pagination(after):
     pymax = pxperpg_y[:row,col].sum()+pxperpg_y[row,col]-1
     rowmin = pymin; rowmax = pymax
     colmin = pxmin; colmax = pxmax
-    print pxmin,pxmax,pymin,pymax
-    print "pxperpg_y[:row,col].sum()",pxperpg_y[row:,col].sum()
-    print ymax-pxperpg_y[row,col]
+    print(pxmin,pxmax,pymin,pymax)
+    print("pxperpg_y[:row,col].sum()",pxperpg_y[row:,col].sum())
+    print(ymax-pxperpg_y[row,col])
     fig = figure(5,figsize=(5*sizex/sizey,5*sizey/sizex))
 
     x,y = locate_color(after,(0,0,0))
@@ -684,3 +701,4 @@ def pagination(after):
 
     plt.xlim(0,276)
     plt.ylim(0,254)
+

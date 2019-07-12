@@ -61,3 +61,6 @@ target/
 
 #Jupyter
 *.ipynb_checkpoints
+
+#Pattern.pdf
+Pattern.pdf
