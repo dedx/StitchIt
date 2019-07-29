@@ -20,7 +20,7 @@ not available in typical craft stores like Michael's or Beverly's. I recommend
 starting at the middle of the pattern (page 6). I also ignored the border line 
 that appears on some edges of the original image.
 
-<a href="img/HiggsPattern-AsStitched.pdf">Pattern Link (pdf)</a>
+[Pattern Link (pdf)](./img/HiggsPattern-AsStitched.pdf)
 
 A colleague asked me why I chose this particular graphic, since it is a simulation, 
 not an actual collision event display, fairly old (circa 2000), and not that accurate.
@@ -30,7 +30,7 @@ My reasons for choosing it were three-fold:
 3. it is not tied to only one experiment but represents the modern LHC era honoring all high energy particle/nuclear physics. (There are lots of iconic bubble chamber images that I may attempt in the future because they are pretty.)
 
 I will probably try doing pieces specific to my experiments at some point but they have to be the right ones. 
-<a href=https://cds.cern.ch/record/2202730">ALICE Pb-Pb event displays</a> are rather bland, color-wise, 
+[ALICE Pb-Pb event displays](https://cds.cern.ch/record/2202730) are rather bland, color-wise, 
 even if they are impressive.
 
 ## Image gallery
@@ -72,4 +72,4 @@ J.L. Klay
 
 <hr>
 
-<p align=center style='text-align:center'>© 2019 StitchIt - <a href="https://github.com/dedx/StitchIt">https://github.com/dedx/StitchIt</a></p>
+© 2019 StitchIt - [https://github.com/dedx/StitchIt](https://github.com/dedx/StitchIt)
