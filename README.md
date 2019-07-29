@@ -49,32 +49,6 @@ Here are some images of the completed stitching in the frame I found for it and 
 [img3]: https://github.com/dedx/StitchIt/raw/master/img/image003.jpg "Stitched Image 3"
 [img4]: https://github.com/dedx/StitchIt/raw/master/img/image004.jpg "Stitched Image 4"
 
-<table align="center" width="500" border="0" cellpadding="5">
-<tr>
-<td align="center" valign="center">
-<img border=0 width=468 height=351 src="img/image004.jpg" alt="Higgs Pattern display 4" />
-<br />
-The completed work before submission to the 2019 California Mid-State Fair.
-</td>
-<img border=0 width=468 height=351 src="img/image001.jpg" alt="Higgs Pattern display 1" />
-<br />
-Stitched pattern on display at the 2019 California Mid-State Fair.
-</td>
-</tr>
-<tr>
-<td align="center" valign="center">
-<img border=0 width=468 height=624 src="img/image003.jpg" alt="Higgs Pattern display 3" />
-<br />
-Me with my work at the 2019 California Mid-State Fair.
-</td>
-<td align="center" valign="center">
-<img border=0 width=468 height=351 src="img/image002.jpg" alt="Higgs Pattern display 2" />
-<br />
-Stitched pattern on display at the 2019 California Mid-State Fair.  The Chart of Nuclides 
-(upper right) was my other entry but it didn't place.
-</td>
-</tr>
-</table>               
 
 Happy stitching!
 
