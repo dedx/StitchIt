@@ -42,7 +42,7 @@ Here are some images of the completed stitching in the frame I found for it and 
 | ![Stitched Image 4][img4]      | ![Stitched Image 1][img1] | 
 | The completed work before submission to the 2019 California Mid-State Fair. | Stitched pattern on display at the 2019 California Mid-State Fair. |
 | ![Stitched Image 3][img3]       | ![Stitched Image 2][img2] |
-| Me with my work at the 2019 California Mid-State Fair. | Stitched pattern on display at the 2019 California Mid-State Fair.  The Chart of Nuclides (upper right) was my other entry but it didn't place. |
+| J.L. Klay with the work at the 2019 California Mid-State Fair. | Stitched pattern on display at the 2019 California Mid-State Fair.  The Chart of Nuclides (upper right) was my other entry but it didn't place. |
 
 [img1]: https://github.com/dedx/StitchIt/raw/master/img/image001.jpg "Stitched Image 1"
 [img2]: https://github.com/dedx/StitchIt/raw/master/img/image002.jpg "Stitched Image 2"
